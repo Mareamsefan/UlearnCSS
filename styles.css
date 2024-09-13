@@ -1,0 +1,86 @@
+/* Base styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+main {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+nav {
+  padding: 1rem;
+  box-shadow: 0px 5px 15px 0px rgba(148, 147, 147, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#AddTodo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+  padding: 3rem;
+  min-width: 70%;
+}
+
+#AddTodo label {
+  font-weight: bold;
+}
+
+#content {
+  padding: 2rem;
+}
+
+button {
+  background-color: turquoise;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  max-width: 5rem;
+  border: none;
+}
+
+section#Todos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+#Todos div {
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0px 5px 15px 0px rgba(148, 147, 147, 0.3);
+  border-radius: 1rem;
+  max-width: 200px;
+  text-align: center;
+}
+article {
+  padding: 2rem;
+  box-shadow: 0px 5px 15px 0px rgba(148, 147, 147, 0.3);
+}
+
+button#Add {
+  justify-self: end;
+  width: 20rem;
+}
+
+h2 {
+  padding-left: 10rem;
+  align-self: flex-start;
+}
